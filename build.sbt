@@ -1,12 +1,12 @@
-val scala3Version = "3.7.1"
+ThisBuild / version := "1.0.0"
+ThisBuild / scalaVersion := "2.12.18"
 
-lazy val root = project
-  .in(file("."))
+lazy val root = (project in file("."))
   .settings(
     name := "co-purchase-analysis",
-    version := "0.1.0-SNAPSHOT",
-
-    scalaVersion := scala3Version,
-
-    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
+    libraryDependencies ++= Seq(
+      "org.apache.spark" %% "spark-core" % "3.5.0",
+      "org.apache.spark" %% "spark-sql" % "3.5.0",
+      "org.scalameta" %% "munit" % "1.0.0" % Test
+    )
   )
