@@ -1,6 +1,7 @@
 # Co-Purchase Analysis
 
 A distributed co-purchase analysis system using Scala and Apache Spark to analyze product affinities in e-commerce datasets.
+For complete project details, methodology, and performance analysis, see the [full project report](https://monk-cup.s3.eu-north-1.amazonaws.com/CO_PURCHASE_ANALYSIS+(2).pdf).
 
 ## Project Overview
 
